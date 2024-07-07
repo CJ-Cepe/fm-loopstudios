@@ -1,0 +1,54 @@
+@use '../utilities' as *;
+
+.overview {
+    display: flex;
+    justify-content: center;
+    padding: 6em 0;
+    background-color: antiquewhite; //xx
+
+    @media screen and (min-width: 50em) {
+        padding: 10em 0;
+    }
+
+    .section__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+}
+
+.overview__img {
+    max-width: px-to-rem(730px);
+}
+
+.overview__card {
+    background-color: var(--white);
+    max-width: auto;
+
+    position: static;
+    padding: 2.75em;
+    text-align: center;
+
+    @media screen and (min-width: 50em) {
+        position: absolute;
+        padding: 5.75em 0 0 5.75em;
+        bottom: 0;
+        right: 0;
+        text-align: left;
+        max-width: px-to-rem(547px);
+    }
+}
+
+.overview__header {}
+
+.overview__content {
+    margin-top: 1em;
+    line-height: 1.65;
+    color: var(--dark-gray1);
+    opacity: 0.9;
+
+    @media screen and (min-width: 50em) {
+        margin-top: 2em;
+    }
+}

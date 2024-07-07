@@ -1,4 +1,10 @@
+@use '../utilities' as *;
+
 body {
+    //content
+
+
+    //text
     @include set-font-style('Alata');
     line-height: 1.5
 }
@@ -6,5 +12,21 @@ body {
 h1,
 h2,
 h3 {
+    @include set-font-style('Josefin Sans');
+    font-size: 3em;
+    letter-spacing: 0.1rem;
+    line-height: 1;
     text-transform: uppercase;
+}
+
+.section__container {
+    --padding: 2rem;
+
+    max-width: px-to-rem(1120px);
+    width: calc(100% - (var(--padding) * 2));
+    background-color: rgb(28, 146, 249);
+}
+
+img {
+    object-fit: cover;
 }

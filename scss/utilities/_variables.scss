@@ -1,4 +1,7 @@
-$white: hsl(0, 0%, 100%);
-$black: hsl(0, 0%, 0%);
-$dark-gray: hsl(0, 0%, 55%);
-$very-dar-gray: hsl(0, 0%, 41%);
+:root {
+    //colors
+    -white: hsl(0, 0%, 100%);
+    -black: hsl(0, 0%, 0%);
+    -dark-gray: hsl(0, 0%, 55%);
+    -dark-gray1: hsl(0, 0%, 41%);
+}

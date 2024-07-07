@@ -1,14 +1,17 @@
 @use '../utilities/forward' as *;
 
 .hero {
-    min-height: 95vh;
+    min-height: px-to-rem(650px);
     position: relative;
-    background-color: aqua;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr min(1200px, 100%) 1fr;
+
 
     &__bg {
         position: absolute;
         object-fit: cover;
+        filter: brightness(0.5);
+        z-index: -1;
     }
 
     &__header {
@@ -18,8 +21,9 @@
         position: relative;
         max-width: px-to-rem(650px);
         padding: 0.5em;
-        border: 0.2rem solid $white;
+        border: 0.05em solid $white;
         align-self: center;
         margin-top: 1em;
+        /* margin: 1em 10% 0 10%; */
     }
 }

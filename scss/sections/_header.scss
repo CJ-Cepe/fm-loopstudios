@@ -1,0 +1,30 @@
+@use '../utilities/forward' as *;
+
+.header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: #{fluid(32px, 40px)};
+
+    display: flex;
+    color: $white;
+    max-width: px-to-rem(1200px);
+
+    &__logo {
+        margin-right: auto;
+        height: #{fluid(24px, 32px)};
+        width: auto;
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+    }
+
+    &__nav-list {
+        display: flex;
+        gap: 2em;
+    }
+}

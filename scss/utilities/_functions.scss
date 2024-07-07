@@ -17,7 +17,7 @@
 }
 
 $default-min-bp: 375px;
-$default-max-bp: 900px;
+$default-max-bp: 800px;
 
 @function round($number, $decimals: 0) {
     $n: 1;

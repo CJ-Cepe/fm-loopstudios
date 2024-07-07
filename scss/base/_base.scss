@@ -1,0 +1,10 @@
+body {
+    @include set-font-style('Alata');
+    line-height: 1.5
+}
+
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
+}

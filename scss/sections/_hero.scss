@@ -1,1 +1,37 @@
 @use '../utilities' as *;
+
+.hero {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    min-height: 90vh;
+    background-color: aquamarine;
+
+    .section__container {
+        background-color: rgb(127, 153, 255);
+
+        display: flex;
+        align-items: center;
+    }
+}
+
+.hero__bg-pic {
+    position: absolute;
+    inset: 0;
+    filter: brightness(0.6);
+
+    .hero__bg-img {
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.hero__header {
+    position: relative;
+    font-size: 4.5em; // 
+    color: var(--white);
+    max-width: 9em;
+    border: 0.05em solid var(--white);
+    padding: 0.5em;
+    margin-top: 1em;
+}

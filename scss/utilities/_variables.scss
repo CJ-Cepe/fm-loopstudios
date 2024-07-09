@@ -1,5 +1,7 @@
 @use 'functions' as *;
 
+$break: 43.75rem;
+
 :root {
     //colors
     --white: hsl(0, 0%, 100%);

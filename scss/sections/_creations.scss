@@ -5,7 +5,7 @@
     .section__container {
         display: grid;
         grid-template-columns: 1fr;
-        row-gap: 4rem; // ??
+        row-gap: var(--creations-gap); // ??
 
         @media screen and (min-width: 50em) {
             grid-template-columns: 1fr 0.5fr;

@@ -12,5 +12,6 @@
     --fs-48: #{fluid(32px, 48px)};
     --fs-72: #{fluid(40px, 72px)};
 
-    //--section-gap:
+    --section-gap: #{fluid(96px, 180px)};
+    --creations-gap: #{fluid(48px, 64px)};
 }

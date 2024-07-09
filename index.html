@@ -17,6 +17,7 @@
     href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
+  <script src="main.js" defer></script>
 </head>
 
 <body>
@@ -24,8 +25,23 @@
   <header class="header">
     <div class="section__container">
       <img src="./images/logo.svg" alt="Loopstudios logo" class="header__logo | logo">
+
       <nav class="header__nav">
+        <button class="hamburger" aria-controls="header__nav-list" aria-expanded="false">
+          <img src="./images/icon-hamburger.svg" alt="" class="hamburger__icon-open" aria-hidden="true">
+          <img src="./images/icon-close.svg" alt="" class="hamburger__icon-close" aria-hidden="true">
+          <span class="visibility-hidden"> menu </span>
+        </button>
+
         <ul class="header__nav-list | nav-list">
+          <li><a href="" class="header__nav-item">About</a></li>
+          <li><a href="" class="header__nav-item">Careers</a></li>
+          <li><a href="" class="header__nav-item">Events</a></li>
+          <li><a href="" class="header__nav-item">Products</a></li>
+          <li><a href="" class="header__nav-item">Support</a></li>
+        </ul>
+
+        <ul class="header__nav-overlay-list | nav-list">
           <li><a href="" class="header__nav-item">About</a></li>
           <li><a href="" class="header__nav-item">Careers</a></li>
           <li><a href="" class="header__nav-item">Events</a></li>
@@ -40,7 +56,7 @@
     <section class="hero">
       <div class="section__container">
         <picture class="hero__bg-pic">
-          <source media="(min-width:43.75rem)" srcset="./images/desktop/image-hero.jpg">
+          <source media="(min-width: 43.75rem)" srcset="./images/desktop/image-hero.jpg">
           <img src="./images/mobile/image-hero.jpg" class="hero__bg-img" alt="hero background">
         </picture>
         <h1 class="hero__header">Immersive experiences that deliver</h1>

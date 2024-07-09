@@ -16,7 +16,11 @@
 .hero__bg-pic {
     position: absolute;
     inset: 0;
-    filter: brightness(0.6);
+    filter: none;
+
+    @media screen and (min-width: 50em) {
+        filter: brightness(0.6);
+    }
 
     .hero__bg-img {
         height: 100%;

@@ -1,16 +1,13 @@
 @use '../utilities' as *;
 
 .hero {
+    position: relative;
+    min-height: 90dvh;
+
     display: flex;
     justify-content: center;
-    position: relative;
-    min-height: 90vh;
-    background-color: aquamarine;
 
     .section__container {
-        /* background-color: rgb(127, 153, 255); */
-
-        padding: 2.375em 0;
         display: flex;
         align-items: center;
     }
@@ -34,5 +31,9 @@
     max-width: 9em;
     border: 0.05em solid var(--white);
     padding: 0.5em;
-    margin-top: 1em;
+    margin-top: 1em; // ??
+
+    @media screen and (max-width: 370px) {
+        font-size: clamp(2rem, 16vw + -1.2rem, 2.5rem);
+    }
 }

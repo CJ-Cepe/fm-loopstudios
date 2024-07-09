@@ -1,7 +1,16 @@
+@use 'functions' as *;
+
 :root {
     //colors
     --white: hsl(0, 0%, 100%);
     --black: hsl(0, 0%, 0%);
-    --dark-gray: hsl(0, 0%, 55%);
-    --dark-gray1: hsl(0, 0%, 41%);
+    --dark-gray1: hsl(0, 0%, 55%);
+    --dark-gray2: hsl(0, 0%, 41%);
+
+    --fs-15: 0.938rem;
+    --fs-32: #{fluid(24px, 32px)};
+    --fs-48: #{fluid(32px, 48px)};
+    --fs-72: #{fluid(40px, 72px)};
+
+    //--section-gap:
 }

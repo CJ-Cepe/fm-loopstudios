@@ -8,8 +8,9 @@
     background-color: aquamarine;
 
     .section__container {
-        background-color: rgb(127, 153, 255);
+        /* background-color: rgb(127, 153, 255); */
 
+        padding: 2.375em 0;
         display: flex;
         align-items: center;
     }
@@ -28,7 +29,7 @@
 
 .hero__header {
     position: relative;
-    font-size: 4.5em; // 
+    font-size: var(--fs-72);
     color: var(--white);
     max-width: 9em;
     border: 0.05em solid var(--white);

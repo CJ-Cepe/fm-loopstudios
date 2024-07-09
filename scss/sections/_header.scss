@@ -1,5 +1,41 @@
 @use '../utilities' as *;
 
 .header {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    padding: 3.75rem 0 0 0;
+
+    .section__container {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.header__logo {
+    height: 2rem;
+    width: auto;
+}
+
+.header__nav {
+    flex-grow: 1;
+    align-items: center;
+    max-width: 25rem;
     display: none;
+
+    @media screen and (min-width: 50em) {
+        /* padding: 10em 0; */
+        display: flex;
+
+    }
+}
+
+.header__nav-list {
+    gap: 1rem;
+    justify-content: space-between;
+    width: 100%;
 }

@@ -1,11 +1,8 @@
 @use '../utilities' as *;
 
 body {
-    //content
-
-
-    //text
     @include set-font-style('Alata');
+    font-size: var(--fs-15);
     line-height: 1.5
 }
 
@@ -13,7 +10,7 @@ h1,
 h2,
 h3 {
     @include set-font-style('Josefin Sans');
-    font-size: 3em;
+    font-size: var(--fs-48);
     letter-spacing: 0.1rem;
     line-height: 1;
     text-transform: uppercase;
@@ -24,9 +21,32 @@ h3 {
 
     max-width: px-to-rem(1120px);
     width: calc(100% - (var(--padding) * 2));
-    background-color: rgb(28, 146, 249);
+    /* background-color: rgb(28, 146, 249); */
 }
 
 img {
     object-fit: cover;
+}
+
+.see-all {
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    padding: 1em 3em;
+    color: var(--black);
+    background-color: var(--white);
+    border: 2px solid var(--dark-gray2);
+    width: min-content;
+    text-wrap: nowrap;
+
+    &:hover {
+        color: var(--white);
+        background-color: var(--black);
+    }
+}
+
+.nav-list {
+    text-transform: capitalize;
+    display: flex;
+    gap: 1em;
+    color: var(--white);
 }

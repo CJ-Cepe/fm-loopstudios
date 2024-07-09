@@ -3,18 +3,13 @@
 .overview {
     display: flex;
     justify-content: center;
-    padding: 6em 0;
-    background-color: antiquewhite; //xx
-
-    @media screen and (min-width: 50em) {
-        padding: 10em 0;
-    }
 
     .section__container {
         display: flex;
         flex-direction: column;
         align-items: center;
         position: relative;
+        gap: 2em;
     }
 }
 
@@ -24,23 +19,19 @@
 
 .overview__card {
     background-color: var(--white);
-    max-width: auto;
-
+    max-width: px-to-rem(547px);
     position: static;
-    padding: 2.75em;
+    padding: 1em;
     text-align: center;
 
     @media screen and (min-width: 50em) {
         position: absolute;
-        padding: 5.75em 0 0 5.75em;
+        padding: 5.75em 1.3rem 0 5.75em;
         bottom: 0;
         right: 0;
         text-align: left;
-        max-width: px-to-rem(547px);
     }
 }
-
-.overview__header {}
 
 .overview__content {
     margin-top: 1em;

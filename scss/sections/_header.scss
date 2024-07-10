@@ -8,11 +8,12 @@
 
     display: flex;
     justify-content: center;
-    padding: 2.5rem 0 0 0;
+    padding: 0;
+    padding-top: #{fluid(40px, 60px)};
 
-    @media screen and (min-width: $break) {
+    /*     @media screen and (min-width: $break) {
         padding: 3.75rem 0 0 0;
-    }
+    } */
 
     .section__container {
         display: flex;

@@ -11,10 +11,6 @@
     padding: 0;
     padding-top: #{fluid(40px, 60px)};
 
-    /*     @media screen and (min-width: $break) {
-        padding: 3.75rem 0 0 0;
-    } */
-
     .section__container {
         display: flex;
         justify-content: space-between;
@@ -59,7 +55,7 @@
     flex-direction: column;
     justify-content: center; // ??
     align-items: start; //
-    gap: 1.5rem; //
+    gap: 1rem; //
 
     background-color: var(--black);
     text-transform: uppercase;
@@ -76,6 +72,13 @@
     @media screen and (min-width: $break) {
         display: none;
     }
+
+    .header__nav-item {
+        opacity: 0;
+        transition: opacity 0.1s ease-in;
+        transition-delay: 0s;
+    }
+
 }
 
 // === hamburger
@@ -84,6 +87,15 @@
         transform: translateY(0%);
         opacity: 1;
         visibility: visible;
+
+        @for $i from 1 through 5 {
+            li:nth-child(#{$i}) {
+                .header__nav-item {
+                    opacity: 1;
+                    transition-delay: #{($i + 3) * 0.1}s;
+                }
+            }
+        }
     }
 }
 

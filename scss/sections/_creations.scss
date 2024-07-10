@@ -7,7 +7,7 @@
     .section__container {
         display: grid;
         grid-template-columns: 1fr;
-        row-gap: var(--creations-gap); // ??
+        row-gap: var(--creations-gap); //
 
         @media screen and (min-width: $break) {
             grid-template-columns: 1fr 0.5fr;
@@ -43,7 +43,7 @@
 
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1.5rem; // ??
+    gap: 1.5rem; //
 
     @media screen and (min-width: $break) {
         grid-column: 1 / 3;
@@ -87,8 +87,8 @@
 }
 
 .creations__item-img {
-    max-height: 28.75rem; // ??
-    object-position: top; // ??
+    max-height: 28.75rem; //
+    object-position: top; //
 }
 
 .creations__item-title {
